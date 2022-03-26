@@ -114,6 +114,7 @@ a {
     font-size: 18px;
     font-weight: 800;
     color: #F9FAF8;
+    cursor: pointer;
 }
 
 .information-section {
@@ -230,6 +231,7 @@ a {
     font-weight: 600;
     background-color: #3882F6;
     padding: 10px 20px 10px 20px;
+    cursor: pointer;
 }
 
 footer {
