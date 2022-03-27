@@ -76,10 +76,11 @@ a {
     text-align: start;
 }
 
+
 .hero-image img {
     vertical-align: middle;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .hero-image {
@@ -248,3 +249,99 @@ footer {
 button {
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 500px) {
+
+    html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        min-height: 100%;
+      }
+    .hero .text-box {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 300px;
+      }
+  
+      .hero {
+          padding: 50px;
+          gap: 0;
+          
+      }
+  
+      .hero .text-box h1 {
+          text-align: center;
+      }
+      .hero .text-box p {
+          text-align: center;
+      }
+  
+      .hero img {
+          display: none;
+      }
+
+      .quote-section blockquote {
+          padding: 100px 0px;
+      }
+
+      .lower-section .call-to-action {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        align-content: center;
+        justify-content: center;
+        gap: 0;
+    }
+    .lower-section .call-to-action .text-box-call-to-action h3 {
+        text-align: center;
+     
+    }
+    .lower-section .call-to-action .text-box-call-to-action p {
+        text-align: center;
+    }
+
+    .lower-section .call-to-action button {
+        border: 2px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: #3882F6;
+        align-self: center;
+        margin-left: 35px;
+        cursor: pointer;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1F2937;
+        color: #E5E7EB;
+        margin-top: auto; 
+        flex-shrink: 0;
+        height: 40px;
+        font-size: 10px;
+    }
+  }
+    
+
+  @media screen and (max-width: 300px) {
+      .links {
+          display: none;
+      }
+
+      .logo {
+          text-align: center;
+      }
+
+      .hero .text-box {
+          flex: 0 0 200px;
+      }
+
+      .lower-section .call-to-action {
+          flex: 0 0 150px;
+      }
+  }
