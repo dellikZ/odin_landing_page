@@ -250,8 +250,8 @@ button {
     cursor: pointer;
 }
 
-
-@media screen and (max-width: 500px) {
+/* Responsive code starts here */
+@media screen and (max-width: 600px) {
 
     html, body {
         margin: 0;
